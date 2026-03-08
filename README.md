@@ -23,7 +23,7 @@
 
 ### Screenshot
 
-<img src="images/open-power-query.png" width="800">
+<img src="images/open.png" width="800">
 
 ### Explanation
 
