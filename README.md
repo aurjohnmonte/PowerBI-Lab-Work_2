@@ -330,5 +330,5 @@ Append is appropriate when tables have the **same structure** but represent diff
 
 
 # Enhancement Activities
-<img src="images/append.jpg" width="800">
+<img src="images/d30c90f7-f1ec-4dba-84f5-3c3441fcfefd.jpg" width="800">
 
