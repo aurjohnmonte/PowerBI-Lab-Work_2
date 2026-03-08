@@ -41,7 +41,7 @@ The **Power Query Editor** allows users to clean, transform, and prepare raw dat
 
 ### Screenshot
 
-<img src="images/remove-duplicates.png" width="800">
+<img src="images/remove_duplicates.jpg" width="800">
 
 ### Explanation
 
@@ -69,7 +69,7 @@ Removing duplicates ensures that every **OrderID** represents a unique transacti
 
 ### Screenshot
 
-<img src="images/missing-values.png" width="800">
+<img src="images/replace_value_quantity.jpg" width="800">
 
 ### Explanation
 
@@ -94,7 +94,7 @@ Missing values can cause issues in reports and analytics. Handling them properly
 
 ### Screenshot
 
-<img src="images/change-data-types.png" width="800">
+<img src="images/order_id.jpg" width="800">
 
 ### Explanation
 
@@ -115,7 +115,7 @@ Correct data types ensure Power BI performs calculations accurately and allows f
 
 ### Screenshot
 
-<img src="images/rename-columns.png" width="800">
+<img src="images/rename_column.jpg" width="800">
 
 ### Explanation
 
@@ -125,7 +125,7 @@ Using consistent naming conventions improves readability and makes it easier to 
 
 # Applied Steps Screenshot
 
-<img src="images/applied-steps.png" width="800">
+<img src="images/rename_column.jpg" width="800">
 
 ### Explanation
 
@@ -243,7 +243,7 @@ Datasets used:
 
 ### Screenshot
 
-<img src="images/load-data.png" width="800">
+<img src="images/load.jpg" width="800">
 
 ---
 
@@ -260,7 +260,7 @@ Datasets used:
 
 ### Screenshot
 
-<img src="images/merge-inner-join.png" width="800">
+<img src="images/merge.jpg" width="800">
 
 ### Explanation
 
@@ -278,7 +278,7 @@ An **Inner Join** returns only records where **CustomerID exists in both tables*
 
 ### Screenshot
 
-<img src="images/append-queries.png" width="800">
+<img src="images/append.jpg" width="800">
 
 ### Explanation
 
@@ -293,10 +293,6 @@ After merging, validation was performed by checking:
 - Row counts
 - Null values
 - Customer details
-
-### Screenshot
-
-<img src="images/validate-data.png" width="800">
 
 ### Explanation
 
@@ -331,4 +327,8 @@ Unmatched records are excluded from the final result. Only rows with matching ke
 ## 4. When is Append more appropriate than Merge?
 
 Append is appropriate when tables have the **same structure** but represent different datasets.
+
+
+# Enhancement Activities
+<img src="images/append.jpg" width="800">
 
