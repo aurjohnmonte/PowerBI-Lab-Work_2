@@ -3,23 +3,6 @@
 
 ---
 
-## 📑 Table of Contents
-1. [Power Query – Data Cleaning](#power-query--data-cleaning)
-2. [Open Power Query Editor](#open-power-query-editor)
-3. [Remove Duplicates](#remove-duplicates)
-4. [Handle Missing Values](#handle-missing-values)
-5. [Change Data Types](#change-data-types)
-6. [Rename Columns Properly](#rename-columns-properly)
-7. [Applied Steps Screenshot](#applied-steps-screenshot)
-8. [Guide Questions](#guide-questions)
-9. [Enhancement Activities](#enhancement-activities)
-10. [Merge and Append Queries](#merge-and-append-queries)
-11. [Merge Datasets](#merge-datasets-inner-join)
-12. [Append Queries](#append-queries)
-13. [Validate Data](#validate-merged-data)
-
----
-
 # Power Query – Data Cleaning
 
 ## 🎯 Lab Objectives
@@ -191,4 +174,161 @@ Good naming conventions include:
 - Use underscores instead of spaces
 - Use descriptive column names
 
-Example:
+
+# Enhancement Activities
+
+## Data Quality Checklist
+
+A data quality checklist may include:
+
+- Remove duplicate records
+- Handle missing values
+- Verify data types
+- Standardize column names
+- Validate data consistency
+- Check numeric ranges
+
+---
+
+## Dataset Size Comparison
+
+Cleaning the dataset reduces unnecessary data by removing duplicates and blank rows. This results in a more efficient dataset for analysis.
+
+---
+
+## Research: What is ETL?
+
+ETL stands for:
+
+| Stage | Description |
+|------|------|
+| Extract | Collect data from sources |
+| Transform | Clean and process the data |
+| Load | Store the processed data |
+
+### Power Query and ETL
+
+Power Query supports the **Transform** stage by allowing users to:
+
+- Clean data
+- Merge datasets
+- Transform columns
+- Standardize formats
+
+This makes Power BI a powerful tool for data preparation.
+
+---
+
+# Merge and Append Queries
+
+## 🎯 Lab Objectives
+
+- Combine datasets using joins
+- Understand the difference between **Merge** and **Append**
+
+---
+
+# Load Data
+
+Datasets used:
+
+- **Customers.csv**
+- **Orders.csv**
+
+### Steps
+
+1. Click **Home → Get Data → Text/CSV**
+2. Import both files
+3. Open **Power Query Editor**
+
+### Screenshot
+
+<img src="images/load-data.png" width="800">
+
+---
+
+# Merge Datasets (Inner Join)
+
+### Steps
+
+1. Select **Orders table**
+2. Click **Home → Merge Queries**
+3. Select **Customers table**
+4. Match using **CustomerID**
+5. Choose **Join Type → Inner Join**
+6. Expand the merged columns
+
+### Screenshot
+
+<img src="images/merge-inner-join.png" width="800">
+
+### Explanation
+
+An **Inner Join** returns only records where **CustomerID exists in both tables**. This ensures orders are matched with valid customers.
+
+---
+
+# Append Queries
+
+### Steps
+
+1. Click **Append Queries → Append as New**
+2. Select multiple monthly sales tables
+3. Confirm the append operation
+
+### Screenshot
+
+<img src="images/append-queries.png" width="800">
+
+### Explanation
+
+Append combines tables **vertically**, meaning rows from different tables are stacked together to create a single dataset.
+
+---
+
+# Validate Merged Data
+
+After merging, validation was performed by checking:
+
+- Row counts
+- Null values
+- Customer details
+
+### Screenshot
+
+<img src="images/validate-data.png" width="800">
+
+### Explanation
+
+Validation ensures that the merge process worked correctly and no unexpected data issues occurred.
+
+---
+
+# Guide Questions
+
+## 1. What is the difference between Merge and Append?
+
+| Feature | Merge | Append |
+|------|------|------|
+| Function | Combines tables using a key column | Stacks tables vertically |
+| Similar To | SQL JOIN | SQL UNION |
+| Usage | Combine related datasets | Combine similar datasets |
+
+---
+
+## 2. Why use Inner Join instead of Left Join?
+
+An **Inner Join** ensures that only records with matching values in both tables are included. This prevents incomplete data from appearing in reports.
+
+---
+
+## 3. What happens to unmatched records in an Inner Join?
+
+Unmatched records are excluded from the final result. Only rows with matching keys in both tables are returned.
+
+---
+
+## 4. When is Append more appropriate than Merge?
+
+Append is appropriate when tables have the **same structure** but represent different datasets.
+
